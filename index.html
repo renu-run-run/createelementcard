@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+</head>
+
+<body id="root">
+    <script>
+
+        let h1Ref = React.createElement('div', {style: { width:"400px",height:"80vh",margin:"50px auto" , boxShadow:"0 0 10px black"} },
+        [React.createElement('div',{style:{textAlign:"center", padding:"2rem 0 0 0"}},
+        [React.createElement('img',{ style:{width:"200px", height:"200px", borderRadius:"50%", justifyContent:"center"},src: "https://funkylife.in/wp-content/uploads/2023/03/good-morning-image-531.jpg"}),
+        React.createElement('h1',{style: { color:"black" }}, "Renuka Choudhary"),
+        React.createElement('p',{style: { color:"black" }}, "I love drinking coffee.") 
+        ] 
+        ),React.createElement('div',{style:{display:"flex",justifyContent:"space-evenly"}},
+        [React.createElement('div',{ style:{textAlign:"center"}},[React.createElement('h2',{style: {color:"blueviolet"}}, "123"),React.createElement('p',{style: {color:"black"}}, "POSTS")]),
+        React.createElement('div',{ style:{textAlign:"center"}},[React.createElement('h2',{style: {color:"blueviolet"}}, "123"),React.createElement('p',{style: {color:"black"}}, "FOLLWERS")]),
+        React.createElement('div',{ style:{textAlign:"center"}},[React.createElement('h2',{style: {color:"blueviolet"}}, "123"),React.createElement('p',{style: {color:"black"}}, "FOLLOWING")])
+        ]),
+        React.createElement('div',{style:{textAlign:"center", padding:"1rem"}},
+        [React.createElement('button',{ style:{padding:"1rem",backgroundColor:"blueviolet",borderRadius:"5px",border:"none",color:"white",fontSize:"15px"}},"FOLLOW"),
+        React.createElement('button',{ style:{padding:"1rem",backgroundColor:"hotpink",borderRadius:"5px",border:"none",color:"white",fontSize:"15px",marginLeft:"10px"}},"MESSAGE"),
+        
+        ])
+    
+        ]);
+        ReactDOM.render(h1Ref, document.getElementById('root'));
+
+
+    </script>
+</body>
+
+</html>
